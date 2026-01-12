@@ -1,6 +1,5 @@
-//your JS code here. If required.
-const openModalBtn = document.getElementById("openModalBtn");
-const closeModalBtn = document.getElementById("closeModalBtn");
+const openModalBtn = document.getElementById("openModal");
+const closeModalBtn = document.getElementById("closeModal");
 const modalOverlay = document.getElementById("modalOverlay");
 
 // Open modal
@@ -13,9 +12,9 @@ closeModalBtn.addEventListener("click", () => {
   modalOverlay.style.display = "none";
 });
 
-// Close modal by clicking outside
-modalOverlay.addEventListener("click", (event) => {
-  if (event.target === modalOverlay) {
+// Close modal on outside click
+modalOverlay.addEventListener("click", (e) => {
+  if (e.target === modalOverlay) {
     modalOverlay.style.display = "none";
   }
 });

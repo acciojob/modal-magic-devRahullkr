@@ -1,28 +1,27 @@
-/*  your css code here. If applicable */
 body {
   font-family: Arial, sans-serif;
 }
 
 /* Overlay */
-.overlay {
+#modalOverlay {
   display: none;
   position: fixed;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
 }
 
 /* Modal */
-.modal {
-  background: #fff;
+#modal {
+  background: white;
   width: 400px;
   border-radius: 6px;
   overflow: hidden;
 }
 
 /* Header */
-.modal-header {
+#modalHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,14 +29,14 @@ body {
   border-bottom: 1px solid #ddd;
 }
 
-.close-btn {
+/* Body */
+#modalBody {
+  padding: 16px;
+}
+
+#closeModal {
   background: none;
   border: none;
   font-size: 20px;
   cursor: pointer;
-}
-
-/* Body */
-.modal-body {
-  padding: 16px;
 }
