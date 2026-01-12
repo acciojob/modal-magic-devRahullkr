@@ -15,9 +15,13 @@ closeModalBtn.addEventListener("click", () => {
   modal.style.display = "none";
 });
 
-// Close modal on outside click
-modalOverlay.addEventListener("click", (e) => {
-  if (e.target === modalOverlay) {
+// Close modal on outside click (Cypress safe)
+document.addEventListener("click", (e) => {
+  if (
+    modal.style.display === "block" &&
+    !modal.contains(e.target) &&
+    e.target !== openModalBtn
+  ) {
     modalOverlay.style.display = "none";
     modal.style.display = "none";
   }
