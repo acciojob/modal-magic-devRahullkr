@@ -2,33 +2,29 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* Overlay */
 .modal-overlay {
-  display: none;
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.5);
+  display: none;
   justify-content: center;
   align-items: center;
 }
 
-/* Modal */
 .modal {
+  display: none;
   background: #fff;
   width: 400px;
   border-radius: 6px;
 }
 
-/* Header */
 .modal-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 16px;
   border-bottom: 1px solid #ddd;
 }
 
-/* Body */
 .modal-body {
   padding: 16px;
 }
